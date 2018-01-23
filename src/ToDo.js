@@ -53,14 +53,14 @@ class ToDo extends React.Component {
         return (
             <div>
                 <TextField
-                    hintText={"Do something nice..."}
+                    hintText={"Add your text..."}
                     fullWidth={true}
                     value={this.state.textFromInput}
                     onChange={(e,value)=> this.setState({textFromInput: value})}
                 />
                 <RaisedButton
                     label={"add"}
-                    primary={true}
+                    secondary={true}
                     fullWidth={true}
                     onClick={this.handleAddTask}
                 />
